@@ -1,13 +1,13 @@
 import React from "react";
 
 import Card from "./components/card/Card";
-import Input from "./components/input/Input";
+import AddUser from "./components/users/AddUser";
 
 function App() {
   return (
     <div>
       <Card>
-        <Input label="label" />
+        <AddUser label="label" />
       </Card>
     </div>
   );
