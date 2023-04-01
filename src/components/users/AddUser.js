@@ -10,11 +10,9 @@ const AddUser = (props) => {
   return (
     <Card className={styles.input}>
       <form>
-        <label htmlFor="username">Username:</label>
-        <input id="username" placeholder={props.label} type="text"></input>
-        <label htmlFor="age">Age:</label>
-        <input id="age" placeholder={props.label} type="number"></input>
-        <Button label={props.label} onClick={addUserHandler} type="submit" />
+        <input id="username" placeholder="Username" type="text"></input>
+        <input id="age" placeholder="Age" type="number"></input>
+        <Button label="Submit" onClick={addUserHandler} type="submit" />
       </form>
     </Card>
   );

@@ -4,6 +4,7 @@ const Button = (props) => {
   return (
     <button
       className={styles.button}
+      type={props.type || "button"}
       placeholder={props.label}
       onClick={props.onClick}>
       {props.label}
