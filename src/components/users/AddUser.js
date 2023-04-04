@@ -15,15 +15,17 @@ const AddUser = (props) => {
     if (username.trim().length < 1 || age.trim().length < 1 || 0 + age < 1) {
       return;
     }
-    console.log("username:", username);
-    console.log("age:", age);
-    // send information
-    userList.push({
-      name: username,
-      age: age,
-      key: username + age + userList.length,
+    // update state
+    setUserList((userList) => {
+      return [
+        ...userList,
+        {
+          name: username,
+          age: age,
+          key: username + age + userList.length,
+        },
+      ];
     });
-    setUserList(userList);
     // clear form
     setUsername("");
     setAge("");
