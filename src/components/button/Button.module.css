@@ -1,4 +1,5 @@
 .button {
   background-color: "#383838";
   color: yellow;
+  border-radius: 5px;
 }
